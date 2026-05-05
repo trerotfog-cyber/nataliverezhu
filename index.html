@@ -5,24 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NATALIVEREZHU - Мастер-классы по вязанию</title>
     
-    <meta name="description" content="Мастер-классы по вязанию спицами и крючком. Подробные видеоуроки и PDF-схемы. Доступ в закрытые Telegram-каналы. Вяжите с удовольствием!">
-    <meta name="keywords" content="вязание, мастер-класс, вязание спицами, вязание крючком, МК, схемы вязания, обучение вязанию, NataliVerezhu">
+    <meta name="description" content="Мастер-классы по вязанию спицами и крючком. Подробные видеоуроки и PDF-схемы.">
+    <meta name="keywords" content="вязание, мастер-класс, вязание спицами, вязание крючком, МК, NataliVerezhu">
     <meta name="author" content="NATALIVEREZHU">
     <meta name="robots" content="index, follow">
     
-    <meta property="og:title" content="NATALIVEREZHU - Мастер-классы по вязанию">
-    <meta property="og:description" content="Подробные мастер-классы по вязанию спицами и крючком. Доступ в закрытые Telegram-каналы.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://trerotfog-cyber.github.io/nataliverezhu/">
-    <meta property="og:image" content="https://trerotfog-cyber.github.io/nataliverezhu/img/og-image.jpg">
-    <meta property="og:site_name" content="NATALIVEREZHU">
-    
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="NATALIVEREZHU - Мастер-классы по вязанию">
-    <meta name="twitter:description" content="Подробные мастер-классы по вязанию спицами и крючком.">
-    
     <link rel="stylesheet" href="css/main.css">
-    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
     
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
@@ -33,10 +21,9 @@
             k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
         })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=109034203', 'ym');
 
-        ym(109034203, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+        ym(109034203, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
     </script>
     <noscript><div><img src="https://mc.yandex.ru/watch/109034203" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-    <!-- /Yandex.Metrika counter -->
 </head>
 <body>
 
@@ -51,6 +38,7 @@
     <div class="light-bottom-center"></div>
 </div>
 
+<!-- Модалки -->
 <div id="contactModal" class="modal">
     <div class="modal-content">
         <span class="close-modal">&times;</span>
@@ -68,9 +56,8 @@
         <h3 class="modal-title">Доставка</h3>
         <div class="modal-text">
             <p>📧 Все мастер-классы доставляются в цифровом формате.</p>
-            <p>🔗 После оплаты ссылка на мастер-класс приходит на вашу электронную почту в течение 5 минут.</p>
+            <p>🔗 После оплаты ссылка на мастер-класс приходит на вашу электронную почту.</p>
             <p>⚠️ Если письма нет — проверьте папку <strong>Спам</strong>!</p>
-            <p>💬 Если возникли проблемы — напишите в Telegram или MAX.</p>
         </div>
     </div>
 </div>
@@ -107,6 +94,7 @@
     </div>
 </section>
 
+<!-- Модалка товара -->
 <div id="productModal" class="modal product-modal" style="overflow-y: auto;">
     <div class="modal-content product-modal-content">
         <span class="close-product-modal">&times;</span>
@@ -135,7 +123,7 @@
                     <input type="email" id="detailUserEmail" placeholder="Ваш Email" required>
                     <button type="submit" class="pay-submit">Купить мастер-класс</button>
                 </form>
-                <p class="payment-info">После покупки мастер-класс придёт на почту. Если письма нет — проверьте папку Спам!</p>
+                <p class="payment-info">После покупки мастер-класс придёт на почту. Проверьте папку Спам!</p>
             </div>
         </div>
     </div>
@@ -176,29 +164,28 @@
 </footer>
 
 <script>
-    // ===== ДАННЫЕ ТОВАРОВ =====
+    // ===== ТОВАРЫ (БЕЗ ССЫЛОК!) =====
     const products = [
-        { id: 1, title: 'Супер подписка на все мастер-классы', shortDesc: 'Доступ ко всем МК по вязанию', fullDesc: 'Супер-подписка на все мои платные мастер-классы в закрытых Telegram-каналах. Доступ бессрочный, новые МК добавляются бесплатно. Перед покупкой доступа ознакомьтесь с форматами МК (прочитайте описание к каждому из них) они все разные - есть в формате видео, есть в формате pdf, на разные уровни подготовки. После оплаты доступ придёт на вашу почту — внимательно заполняйте поля без ошибок.', price: 1500, oldPrice: 2900, images: ['img/super_podpiska.png'], link: 'https://drive.google.com/file/d/19BmYCTP8KTWXkwHQ3C2E_ET-9mjpL3yt/view' },
-        { id: 2, title: 'МК ЖИЛЕТ крючком', shortDesc: 'Стильный жилет крючком', fullDesc: 'Мастер-класс в формате ВИДЕО и ФОТО, вяжем в закрытом канале max и ТГ(видео продублирую в ВК)МК подходит для начинающих, пошаговое и порядовое Это жилетка оверсайз на размер 40-44, так же дам рекомендации на другие размеры Про пряжу и крючок:Подойдет любая пряжа с параметрами 100гр 330-370м Расход: 300-350гр', price: 390, oldPrice: 600, images: ['img/жл/жл1.png', 'img/жл/жл2.png', 'img/жл/жл3.png'], link: 'https://drive.google.com/file/d/19BmYCTP8KTWXkwHQ3C2E_ET-9mjpL3yt/view' },
-        { id: 3, title: 'МК воротник крючком MAXI', shortDesc: 'Объёмный воротник-снуд', fullDesc: 'Мастер-класс воротник MAXI  крючком. МК в формате PDF все видео загружены в ВК. И Вяжем в закрытом канале MAX, описание в формате видео. В описании 2 способа обвязки воротника Уровень: внимательный новичок СХЕМЫ НЕТ, только видео Доступ приходит на указанную вами почту, очень внимательно заполняйте поля. ЕСЛИ ПИСЬМА НЕТ, ПРОВЕРЬТЕ ПАПКУ СПАМ! Так же после оплаты все ссылки в этом блоке будут кликабельны', price: 390, oldPrice: 600, images: ['img/vmx/vmx1.png', 'img/vmx/vmx2.png', 'img/vmx/vmx3.png'], link: 'https://drive.google.com/file/d/19BmYCTP8KTWXkwHQ3C2E_ET-9mjpL3yt/view' },
-        { id: 4, title: 'ТОП крючком', shortDesc: 'Летний ажурный топ', fullDesc: 'Подробное пошаговое описание в формате PDF + видео и фото. ВСЕ ВИДЕО ЗАГРУЖЕНЫ в ВК и на ЮТУБ. Вяжем крючком в технике поперечного вязания. в подарок базовый курс по вязанию крючком для новичка. Уровень: ВНИМАТЕЛЬНЫЙ НОВИЧОК', price: 500, oldPrice: null, images: ['img/top/top1.png', 'img/top/top2.png', 'img/top/top3.png', 'img/top/top4.png'], link: 'https://drive.google.com/file/d/19BmYCTP8KTWXkwHQ3C2E_ET-9mjpL3yt/view' },
-        { id: 5, title: 'МК косынка Charme', shortDesc: 'Элегантная косынка', fullDesc: 'ЭТО САМЫЙ ПОДРОБНЫЙ МК! БЕРИ И ВЯЖИ! МК находится в закрытом телеграмм канале с фото, текстом и ВИДЕО. Все супер подробно описано. Так же мастер-класс размещение в закрытом канале MAX. МК-КРЮЧКОМ!', price: 500, oldPrice: null, images: ['img/chr/chr1.png', 'img/chr/chr2.png', 'img/chr/chr3.png', 'img/chr/chr4.png'], link: 'https://drive.google.com/file/d/19BmYCTP8KTWXkwHQ3C2E_ET-9mjpL3yt/view' },
-        { id: 6, title: 'МК базовая водолазка', shortDesc: 'Уютная водолазка спицами', fullDesc: 'Вяжем базовую водолазку спицами. Подробное описание в закрытом ТГ, так же все видео-уроки продублированы в ВК и закрытом канале MAX. Уровень сложности: СРЕДНИЙ', price: 490, oldPrice: null, images: ['img/vdl/vdl1.png', 'img/vdl/vdl2.png', 'img/vdl/vdl3.png'], link: 'https://drive.google.com/file/d/19BmYCTP8KTWXkwHQ3C2E_ET-9mjpL3yt/view' },
-        { id: 7, title: 'МК кардиган ВЕСНА крючком', shortDesc: 'Лёгкий кардиган на весну', fullDesc: 'Мастер-класс кардиган крючком в закрытом ТГ, в формате видео и фото. Так же все видео продублирую в ВК и MAX. Описание на любой размер, при желании можно связать больше или меньше. Расход пряжи 400-500гр в зависимости от желаемого размера. Параметры пряжи 100гр 200-250м крючок 6-7.', price: 490, oldPrice: null, images: ['img/mkg/mkg1.png', 'img/mkg/mkg2.png', 'img/mkg/mkg3.png', 'img/mkg/mkg4.png'], link: 'https://drive.google.com/file/d/19BmYCTP8KTWXkwHQ3C2E_ET-9mjpL3yt/view' },
-        { id: 8, title: 'МК манишка MINI крючком', shortDesc: 'Компактная манишка', fullDesc: '2 ОПИСАНИЯ на 2 вида манишки крючком, большая и маленькая(подойдет на ребенка).Подробное по рядовое описание в закрытом телеграмм канале+PDF документ+ видео и фото. Так же описание в КАНАЛЕ MAX. ПОДАРОК: курс по вязанию крючком для начинающих и гайд ВТО вязанных изделий. УРОВЕНЬ внимательный новичек.', price: 390, oldPrice: 600, images: ['img/vmi/vmi1.png', 'img/vmi/vmi2.png', 'img/vmi/vmi3.png'], link: 'https://drive.google.com/file/d/19BmYCTP8KTWXkwHQ3C2E_ET-9mjpL3yt/view' },
-        { id: 9, title: 'манишка MAXI крючком', shortDesc: 'Большая тёплая манишка', fullDesc: 'Мастер-класс в формате pdf с видео и так же описание в закрытом телеграмм канале и в КАНАЛЕ MAX. мастер-класс подходит для начинающих. ПРО пряжу и крючок: Я использовала пряжу с параметрами 50гр 130-150м и крючок номер 4-4,5. Вы подбираете себе ту из которой вам будет комфортно вязать, соблюдая вышеуказанные параметры. Так же обязательно понадобятся маркеры(6-10шт) и сантиметровая лента для измерений. РАСХОД: 300-350гр', price: 600, oldPrice: null, images: ['img/vma/vma3.png', 'img/vma/vma2.png', 'img/vma/vma1.png'], link: 'https://drive.google.com/file/d/19BmYCTP8KTWXkwHQ3C2E_ET-9mjpL3yt/view' },
-        { id: 10, title: 'косынка FLEUR', shortDesc: 'Цветочная косынка', fullDesc: 'Супер подробное описание, в закрытом телеграмм канале. Содержит ВИДЕО, фото и пошаговое описанние в ТЕЛЕГРАММ КАНАЛЕ ‼️ и так же загрузила в ВК. ВЯЖЕМ КРЮЧКОМ! уровень: внимательный новичок, требуется уметь вязать: воздушные петли, соеденительный столбик, столбик с двумя накидами. После оплаты вам на почту придет доступ в закрытый телеграмм канал.', price: 500, oldPrice: null, images: ['img/fle/fle.png', 'img/fle/fle1.png'], link: 'https://drive.google.com/file/d/19BmYCTP8KTWXkwHQ3C2E_ET-9mjpL3yt/view' },
-        { id: 11, title: 'МК капор спицами', shortDesc: 'Тёплый капор спицами', fullDesc: 'Мастер-класс по вязанию капора спицами. Подробное описание в формате видео и фото, подходит для начинающих. Вяжем', price: 390, oldPrice: 600, images: ['img/mkk/mkk1.png', 'img/mkk/mkk2.png', 'img/mkk/mkk3.png', 'img/mkk/mkk4.png'], link: 'https://drive.google.com/file/d/19BmYCTP8KTWXkwHQ3C2E_ET-9mjpL3yt/view' },
-        { id: 12, title: 'МК шаль спицами', shortDesc: 'Ажурная шаль', fullDesc: 'Мастер-класс по вязанию ажурной ТРЕУГОЛЬНОЙ шали спицами. Подробное описание для НАЧИНАЮЩИХ, в формате видео, фото и схемы. Вяжем в закрытом канале МАКС и ТГ.', price: 390, oldPrice: null, images: ['img/mkh/mkh1.png', 'img/mkh/mkh2.png', 'img/mkh/mkh3.png'], link: 'https://drive.google.com/file/d/19BmYCTP8KTWXkwHQ3C2E_ET-9mjpL3yt/view' },
-        { id: 13, title: 'Шапка крючком', shortDesc: 'Модная шапка крючком', fullDesc: 'Приглашаю вас в совместник по вязанию шапки крючком, который находится в закрытом телеграмм канале. Доступ вы получите на указанную почту, после оплаты. Уровень сложности: внимательный новичёк. В данном описании вы найдете нужные материалы, пошаговое описание и видео.', price: 390, oldPrice: 500, images: ['img/sha/sha1.png', 'img/sha/sha2.png', 'img/sha/sha3.png'], link: 'https://drive.google.com/file/d/19BmYCTP8KTWXkwHQ3C2E_ET-9mjpL3yt/view' },
-        { id: 14, title: 'МК кардиган Natali', shortDesc: 'Кардиган с узором', fullDesc: 'Все видео-уроки загружены на ЮТУБ Необходимые Навыки: Базовая техника набора петель, вязание лицевых и изнаночных петель, техника поворотного и кругового вязания, подробное описание в формате pdf+ видео и фото основных моментов', price: 600, oldPrice: null, images: ['img/natal/natali4.png', 'img/natal/natali1.png', 'img/natal/natali2.png', 'img/natal/natali3.png'], link: 'https://drive.google.com/file/d/19BmYCTP8KTWXkwHQ3C2E_ET-9mjpL3yt/view' },
-        { id: 15, title: 'ВТО вязаных изделий', shortDesc: 'Влажно-тепловая обработка', fullDesc: 'Влажно тепловая обработка вязаных изделий, подробный гайд с советами и рекомендациями по уходу за изделиями ручной работы', price: 150, oldPrice: null, images: ['img/vto.png'], link: 'https://drive.google.com/file/d/19BmYCTP8KTWXkwHQ3C2E_ET-9mjpL3yt/view' }
+        { id: 1, title: 'Супер подписка на все мастер-классы', shortDesc: 'Доступ ко всем МК по вязанию', fullDesc: 'Супер-подписка на все мои платные мастер-классы. Доступ бессрочный, новые МК добавляются бесплатно.', price: 1500, oldPrice: 2900, images: ['img/super_podpiska.png'] },
+        { id: 2, title: 'МК ЖИЛЕТ крючком', shortDesc: 'Стильный жилет крючком', fullDesc: 'Мастер-класс в формате ВИДЕО и ФОТО. Подходит для начинающих. Размер 40-44.', price: 390, oldPrice: 600, images: ['img/жл/жл1.png', 'img/жл/жл2.png', 'img/жл/жл3.png'] },
+        { id: 3, title: 'МК воротник крючком MAXI', shortDesc: 'Объёмный воротник-снуд', fullDesc: 'Мастер-класс воротник MAXI крючком. Уровень: внимательный новичок.', price: 390, oldPrice: 600, images: ['img/vmx/vmx1.png', 'img/vmx/vmx2.png', 'img/vmx/vmx3.png'] },
+        { id: 4, title: 'ТОП крючком', shortDesc: 'Летний ажурный топ', fullDesc: 'Подробное описание в формате PDF + видео. Вяжем в технике поперечного вязания.', price: 500, oldPrice: null, images: ['img/top/top1.png', 'img/top/top2.png', 'img/top/top3.png', 'img/top/top4.png'] },
+        { id: 5, title: 'МК косынка Charme', shortDesc: 'Элегантная косынка', fullDesc: 'Самый подробный МК! В закрытом телеграм канале с видео, фото и текстом.', price: 500, oldPrice: null, images: ['img/chr/chr1.png', 'img/chr/chr2.png', 'img/chr/chr3.png', 'img/chr/chr4.png'] },
+        { id: 6, title: 'МК базовая водолазка', shortDesc: 'Уютная водолазка спицами', fullDesc: 'Вяжем базовую водолазку спицами. Уровень сложности: СРЕДНИЙ.', price: 490, oldPrice: null, images: ['img/vdl/vdl1.png', 'img/vdl/vdl2.png', 'img/vdl/vdl3.png'] },
+        { id: 7, title: 'МК кардиган ВЕСНА крючком', shortDesc: 'Лёгкий кардиган на весну', fullDesc: 'Описание на любой размер. Расход пряжи 400-500гр.', price: 490, oldPrice: null, images: ['img/mkg/mkg1.png', 'img/mkg/mkg2.png', 'img/mkg/mkg3.png', 'img/mkg/mkg4.png'] },
+        { id: 8, title: 'МК манишка MINI крючком', shortDesc: 'Компактная манишка', fullDesc: '2 описания на 2 вида манишки. Подарок: курс для начинающих.', price: 390, oldPrice: 600, images: ['img/vmi/vmi1.png', 'img/vmi/vmi2.png', 'img/vmi/vmi3.png'] },
+        { id: 9, title: 'манишка MAXI крючком', shortDesc: 'Большая тёплая манишка', fullDesc: 'Подходит для начинающих. Расход: 300-350гр.', price: 600, oldPrice: null, images: ['img/vma/vma3.png', 'img/vma/vma2.png', 'img/vma/vma1.png'] },
+        { id: 10, title: 'косынка FLEUR', shortDesc: 'Цветочная косынка', fullDesc: 'Супер подробное описание с видео. Уровень: внимательный новичок.', price: 500, oldPrice: null, images: ['img/fle/fle.png', 'img/fle/fle1.png'] },
+        { id: 11, title: 'МК капор спицами', shortDesc: 'Тёплый капор спицами', fullDesc: 'Подробное описание в формате видео и фото. Для начинающих.', price: 390, oldPrice: 600, images: ['img/mkk/mkk1.png', 'img/mkk/mkk2.png', 'img/mkk/mkk3.png', 'img/mkk/mkk4.png'] },
+        { id: 12, title: 'МК шаль спицами', shortDesc: 'Ажурная шаль', fullDesc: 'Для начинающих. В формате видео, фото и схемы.', price: 390, oldPrice: null, images: ['img/mkh/mkh1.png', 'img/mkh/mkh2.png', 'img/mkh/mkh3.png'] },
+        { id: 13, title: 'Шапка крючком', shortDesc: 'Модная шапка крючком', fullDesc: 'Совместник в закрытом телеграм канале. Уровень: внимательный новичок.', price: 390, oldPrice: 500, images: ['img/sha/sha1.png', 'img/sha/sha2.png', 'img/sha/sha3.png'] },
+        { id: 14, title: 'МК кардиган Natali', shortDesc: 'Кардиган с узором', fullDesc: 'Видео-уроки на YouTube. Необходимые навыки: базовые.', price: 600, oldPrice: null, images: ['img/natal/natali4.png', 'img/natal/natali1.png', 'img/natal/natali2.png', 'img/natal/natali3.png'] },
+        { id: 15, title: 'ВТО вязаных изделий', shortDesc: 'Влажно-тепловая обработка', fullDesc: 'Гайд с советами и рекомендациями по уходу.', price: 150, oldPrice: null, images: ['img/vto.png'] }
     ];
     
-    // ===== URL СКРИПТА =====
-    const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbw7WWqRfSj7DEhUdCDabtF2kl8kNft6iIaNAovnFqCskNhUs_yT4gmjG4fb_SqBbrX2Ug/exec';
+    const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwMVdmed_YWo5sM1LtGtCHAx_OPiA8iB_-_oqvTq8IuEoi_tcghTQ98EdD8ONkQJIsroA/exec'; // 👈 ЗАМЕНИТЕ!
     
-    // ===== ОТРИСОВКА КАРУСЕЛИ =====
+    // Отрисовка карточек
     const carouselTrack = document.getElementById('carouselTrack');
     
     function renderProducts() {
@@ -225,10 +212,8 @@
     
     renderProducts();
     
-    // ===== ОТКРЫТИЕ МОДАЛКИ ТОВАРА =====
+    // Модалка товара
     const productModal = document.getElementById('productModal');
-    const closeProductModal = document.querySelector('.close-product-modal');
-    
     let currentProduct = null;
     let galleryCurrentIndex = 0;
     
@@ -300,11 +285,9 @@
         }
     });
     
-    if (closeProductModal) {
-        closeProductModal.onclick = () => {
-            productModal.style.display = 'none';
-        };
-    }
+    document.querySelector('.close-product-modal')?.addEventListener('click', () => {
+        productModal.style.display = 'none';
+    });
     
     document.addEventListener('click', (e) => {
         if (e.target.classList.contains('buy-btn')) {
@@ -313,17 +296,16 @@
         }
     });
     
-    // ===== ОТПРАВКА ПИСЬМА (ИСПРАВЛЕНА) =====
+    // ⚠️ БЕЗОПАСНАЯ ОТПРАВКА (передаём только ID товара, без ссылки!)
     const detailPaymentForm = document.getElementById('detailPaymentForm');
     
-    async function sendEmailToCustomer(customerEmail, name, surname, product, productLink) {
-        // Кодируем русский текст в Base64
+    async function sendOrderToServer(customerEmail, name, surname, product) {
         const encodedName = btoa(unescape(encodeURIComponent(name)));
         const encodedSurname = btoa(unescape(encodeURIComponent(surname)));
-        const encodedProduct = btoa(unescape(encodeURIComponent(product.title)));
+        const encodedProductTitle = btoa(unescape(encodeURIComponent(product.title)));
         
         try {
-            await fetch(GOOGLE_SCRIPT_URL, {
+            const response = await fetch(GOOGLE_SCRIPT_URL, {
                 method: 'POST',
                 mode: 'no-cors',
                 headers: { 'Content-Type': 'application/json' },
@@ -331,15 +313,14 @@
                     name: encodedName,
                     surname: encodedSurname,
                     email: customerEmail,
-                    product: encodedProduct,
-                    productLink: productLink,
+                    productTitle: encodedProductTitle,
+                    productId: product.id,  // ← только ID, ссылку сервер сам найдёт!
                     price: product.price
                 })
             });
-            console.log(`Письмо отправляется на ${customerEmail}`);
             return true;
         } catch (error) {
-            console.error('Ошибка отправки письма:', error);
+            console.error('Ошибка:', error);
             return false;
         }
     }
@@ -353,7 +334,7 @@
             const email = document.getElementById('detailUserEmail').value;
             
             if (!name || !surname || !email) {
-                alert('Пожалуйста, заполните имя, фамилию и email');
+                alert('Пожалуйста, заполните все поля');
                 return;
             }
             
@@ -367,19 +348,14 @@
             btn.textContent = 'Отправка...';
             btn.disabled = true;
             
-            try {
-                const success = await sendEmailToCustomer(email, name, surname, currentProduct, currentProduct.link);
-                
-                if (success) {
-                    alert(`✅ ${name} ${surname}, готово!\n\nПисьмо со ссылкой на мастер-класс отправлено на ${email}\n\nПроверьте почту (и папку Спам!).`);
-                    productModal.style.display = 'none';
-                    detailPaymentForm.reset();
-                } else {
-                    alert(`❌ ${name}, не удалось отправить письмо.\n\nПожалуйста, напишите нам в Telegram.`);
-                }
-            } catch (error) {
-                console.error('Ошибка:', error);
-                alert(`❌ Ошибка отправки. Пожалуйста, напишите нам в Telegram.`);
+            const success = await sendOrderToServer(email, name, surname, currentProduct);
+            
+            if (success) {
+                alert(`✅ ${name} ${surname}, готово!\n\nСсылка на мастер-класс отправлена на ${email}\n\nПроверьте почту (и папку Спам!)`);
+                productModal.style.display = 'none';
+                detailPaymentForm.reset();
+            } else {
+                alert(`❌ Не удалось отправить заказ. Напишите нам в Telegram.`);
             }
             
             btn.textContent = originalText;
@@ -387,22 +363,20 @@
         };
     }
     
-    // ===== МОДАЛКИ =====
+    // Модалки контактов
     const modal = document.getElementById('contactModal');
     const contactsBtn = document.getElementById('contactsBtn');
     const closeModalBtn = document.querySelector('.close-modal');
     
     if (contactsBtn) {
-        contactsBtn.onclick = function(e) {
+        contactsBtn.onclick = (e) => {
             e.preventDefault();
             modal.style.display = 'flex';
         };
     }
     
     if (closeModalBtn) {
-        closeModalBtn.onclick = function() {
-            modal.style.display = 'none';
-        };
+        closeModalBtn.onclick = () => modal.style.display = 'none';
     }
     
     const deliveryModal = document.getElementById('deliveryModal');
@@ -410,43 +384,24 @@
     const deliveryBtn = document.getElementById('deliveryBtn');
     const policyBtn = document.getElementById('policyBtn');
     
-    if (deliveryBtn) {
-        deliveryBtn.onclick = function(e) {
-            e.preventDefault();
-            deliveryModal.style.display = 'flex';
-        };
-    }
-    
-    if (policyBtn) {
-        policyBtn.onclick = function(e) {
-            e.preventDefault();
-            policyModal.style.display = 'flex';
-        };
-    }
+    if (deliveryBtn) deliveryBtn.onclick = (e) => { e.preventDefault(); deliveryModal.style.display = 'flex'; };
+    if (policyBtn) policyBtn.onclick = (e) => { e.preventDefault(); policyModal.style.display = 'flex'; };
     
     const homeBtn = document.getElementById('homeBtn');
-    if (homeBtn) {
-        homeBtn.onclick = function(e) {
-            e.preventDefault();
-            document.querySelector('.products-section').scrollIntoView({ behavior: 'smooth' });
-        };
-    }
+    if (homeBtn) homeBtn.onclick = (e) => { e.preventDefault(); document.querySelector('.products-section').scrollIntoView({ behavior: 'smooth' }); };
     
-    window.onclick = function(e) {
-        if (e.target == modal) modal.style.display = 'none';
-        if (e.target == productModal) productModal.style.display = 'none';
-        if (e.target == deliveryModal) deliveryModal.style.display = 'none';
-        if (e.target == policyModal) policyModal.style.display = 'none';
+    window.onclick = (e) => {
+        if (e.target === modal) modal.style.display = 'none';
+        if (e.target === productModal) productModal.style.display = 'none';
+        if (e.target === deliveryModal) deliveryModal.style.display = 'none';
+        if (e.target === policyModal) policyModal.style.display = 'none';
     };
     
-    // ===== КАРУСЕЛЬ ТОВАРОВ =====
+    // Карусель
     const track = document.getElementById('carouselTrack');
-    const prevBtn = document.getElementById('prevBtn');
-    const nextBtn = document.getElementById('nextBtn');
-    
+    const prevBtnCarousel = document.getElementById('prevBtn');
+    const nextBtnCarousel = document.getElementById('nextBtn');
     let currentIndexCarousel = 0;
-    let startX = 0;
-    let isDragging = false;
     
     function getCardsPerView() {
         const width = window.innerWidth;
@@ -461,85 +416,32 @@
         const cardWidth = document.querySelector('.product-card')?.offsetWidth || 280;
         const gap = 30;
         const maxIndex = Math.max(0, track.children.length - cardsPerView);
-        
         if (currentIndexCarousel > maxIndex) currentIndexCarousel = maxIndex;
-        if (currentIndexCarousel < 0) currentIndexCarousel = 0;
-        
         const offset = currentIndexCarousel * (cardWidth + gap);
         track.style.transform = `translateX(-${offset}px)`;
-        
-        prevBtn.disabled = currentIndexCarousel === 0;
-        nextBtn.disabled = currentIndexCarousel >= maxIndex;
-        prevBtn.style.opacity = currentIndexCarousel === 0 ? '0.4' : '1';
-        nextBtn.style.opacity = currentIndexCarousel >= maxIndex ? '0.4' : '1';
+        if (prevBtnCarousel) prevBtnCarousel.style.opacity = currentIndexCarousel === 0 ? '0.4' : '1';
+        if (nextBtnCarousel) nextBtnCarousel.style.opacity = currentIndexCarousel >= maxIndex ? '0.4' : '1';
     }
     
-    if (prevBtn && nextBtn && track) {
-        prevBtn.onclick = () => {
-            if (currentIndexCarousel > 0) {
-                currentIndexCarousel--;
-                updateCarousel();
-            }
-        };
-        
-        nextBtn.onclick = () => {
+    if (prevBtnCarousel && nextBtnCarousel) {
+        prevBtnCarousel.onclick = () => { if (currentIndexCarousel > 0) { currentIndexCarousel--; updateCarousel(); } };
+        nextBtnCarousel.onclick = () => {
             const cardsPerView = getCardsPerView();
             const maxIndex = Math.max(0, track.children.length - cardsPerView);
-            if (currentIndexCarousel < maxIndex) {
-                currentIndexCarousel++;
-                updateCarousel();
-            }
+            if (currentIndexCarousel < maxIndex) { currentIndexCarousel++; updateCarousel(); }
         };
-        
-        track.addEventListener('touchstart', (e) => {
-            startX = e.touches[0].clientX;
-            isDragging = true;
-        });
-        
-        track.addEventListener('touchend', (e) => {
-            if (!isDragging) return;
-            const endX = e.changedTouches[0].clientX;
-            const diff = startX - endX;
-            const cardsPerView = getCardsPerView();
-            const maxIndex = Math.max(0, track.children.length - cardsPerView);
-            
-            if (Math.abs(diff) > 50) {
-                if (diff > 0 && currentIndexCarousel < maxIndex) {
-                    currentIndexCarousel++;
-                    updateCarousel();
-                } else if (diff < 0 && currentIndexCarousel > 0) {
-                    currentIndexCarousel--;
-                    updateCarousel();
-                }
-            }
-            isDragging = false;
-        });
-        
-        window.addEventListener('resize', () => updateCarousel());
+        window.addEventListener('resize', updateCarousel);
         setTimeout(updateCarousel, 100);
     }
     
-    // ===== КНОПКА "НАВЕРХ" =====
+    // Кнопка наверх
     const backToTopBtn = document.getElementById('backToTop');
-
     if (backToTopBtn) {
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 300) {
-                backToTopBtn.classList.add('show');
-            } else {
-                backToTopBtn.classList.remove('show');
-            }
+            backToTopBtn.classList.toggle('show', window.scrollY > 300);
         });
-        
-        backToTopBtn.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
+        backToTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
     }
-    
-    console.log('Сайт готов! Письма отправляются, заказы сохраняются в таблицу 🧶');
 </script>
 
 </body>
